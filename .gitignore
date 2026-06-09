@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Except index.html at root
+!.gitignore
+!/index.html
+!/LICENSE
+!/assets/
+assets/*
+!/assets/favicon.svg
