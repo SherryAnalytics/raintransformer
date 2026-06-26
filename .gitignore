@@ -8,3 +8,7 @@
 !/assets/
 assets/*
 !/assets/favicon.svg
+!/posts.json
+!/.github/
+!/.github/workflows/
+!/.github/workflows/update-posts.yml

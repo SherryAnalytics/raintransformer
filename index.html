@@ -527,6 +527,22 @@
       margin-left: 4px;
     }
 
+    /* ── INSIGHT SKELETON ── */
+    .insight-skeleton {
+      height: 56px;
+      margin: 0 -32px;
+      padding: 14px 32px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(90deg, var(--border) 25%, #eef3f8 50%, var(--border) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+    }
+    .insight-skeleton:last-child { border-bottom: none; }
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
     /* ── CONTACT ── */
     .section-contact { background: var(--white); padding: 96px 56px; }
 
@@ -959,48 +975,10 @@
       <p>Writing on AI engineering, data infrastructure, and the tools we use to build it.</p>
     </div>
 
-    <div class="insights-list">
-
-      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-11-your-home-is-a-data-center.html" target="_blank" rel="noopener">
-        <div class="insight-meta">
-          <span class="insight-date">Jun 2026</span>
-          <div class="insight-tags"><span class="insight-tag">ai-infrastructure</span><span class="insight-tag">power-grid</span></div>
-        </div>
-        <div class="insight-title">Your Neighbor's Side Yard Might Be Running AI <span class="insight-arrow">→</span></div>
-      </a>
-
-      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-08-From-HTML-to-Live-Deploying-a-Business-Website-with-GitHub-Pages-and-Custom-Domain.html" target="_blank" rel="noopener">
-        <div class="insight-meta">
-          <span class="insight-date">Jun 2026</span>
-          <div class="insight-tags"><span class="insight-tag">github-pages</span><span class="insight-tag">dns</span></div>
-        </div>
-        <div class="insight-title">From HTML to Live: Deploying a Business Website with GitHub Pages and a Custom Domain <span class="insight-arrow">→</span></div>
-      </a>
-
-      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-06-Sherry-and-Claude-Untangle-Three-Separate-Billing-Systems.html" target="_blank" rel="noopener">
-        <div class="insight-meta">
-          <span class="insight-date">Jun 2026</span>
-          <div class="insight-tags"><span class="insight-tag">python</span><span class="insight-tag">billing</span></div>
-        </div>
-        <div class="insight-title">Untangling Three Separate Billing Systems <span class="insight-arrow">→</span></div>
-      </a>
-
-      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-05-Sherry-and-Claude-Added-HTML-Publishing-Pipeline-for-Garden-of-Thoughts.html" target="_blank" rel="noopener">
-        <div class="insight-meta">
-          <span class="insight-date">Jun 2026</span>
-          <div class="insight-tags"><span class="insight-tag">python</span><span class="insight-tag">automation</span></div>
-        </div>
-        <div class="insight-title">Building an HTML Publishing Pipeline for a Markdown Blog <span class="insight-arrow">→</span></div>
-      </a>
-
-      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-05-11-The-Prompt-Evolved-Into-Infrastructure.html" target="_blank" rel="noopener">
-        <div class="insight-meta">
-          <span class="insight-date">May 2026</span>
-          <div class="insight-tags"><span class="insight-tag">prompt-engineering</span><span class="insight-tag">llm</span></div>
-        </div>
-        <div class="insight-title">The Prompt Evolved Into Infrastructure — A Quiet Shift in AI Engineering <span class="insight-arrow">→</span></div>
-      </a>
-
+    <div class="insights-list" id="insights-list">
+      <div class="insight-skeleton" aria-hidden="true"></div>
+      <div class="insight-skeleton" aria-hidden="true"></div>
+      <div class="insight-skeleton" aria-hidden="true"></div>
     </div>
 
     <div style="text-align:center;margin-top:40px;">
@@ -1147,6 +1125,39 @@
       });
     });
   }
+
+  // ── Insights: fetch posts.json and render ──────────────────────────────
+  (function() {
+    var list = document.getElementById('insights-list');
+    if (!list) return;
+
+    function renderPost(post) {
+      var tags = (post.tags || []).slice(0, 3).map(function(t) {
+        return '<span class="insight-tag">' + t + '</span>';
+      }).join('');
+      var tagsHtml = tags ? '<div class="insight-tags">' + tags + '</div>' : '';
+      return '<a class="insight-row" href="' + post.url + '" target="_blank" rel="noopener">'
+        + '<div class="insight-meta">'
+        + '<span class="insight-date">' + post.dateLabel + '</span>'
+        + tagsHtml
+        + '</div>'
+        + '<div class="insight-title">' + post.title + ' <span class="insight-arrow">→</span></div>'
+        + '</a>';
+    }
+
+    fetch('/posts.json')
+      .then(function(res) {
+        if (!res.ok) throw new Error('fetch failed');
+        return res.json();
+      })
+      .then(function(posts) {
+        list.innerHTML = posts.map(renderPost).join('');
+      })
+      .catch(function() {
+        list.innerHTML = '<p style="padding:24px 0;text-align:center;color:var(--gray);font-size:14px;">'
+          + 'Could not load posts. <a href="https://sherryanalytics.github.io/Rain/garden-of-thoughts/" target="_blank" rel="noopener" style="color:var(--steel);">View all writing →</a></p>';
+      });
+  })();
 
   document.querySelectorAll('.faq-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
