@@ -9,6 +9,7 @@
 assets/*
 !/assets/favicon.svg
 !/posts.json
+!/insights-workflow.html
 !/.github/
 !/.github/workflows/
 !/.github/workflows/update-posts.yml
