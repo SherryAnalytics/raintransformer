@@ -458,6 +458,75 @@
       padding-top: 16px;
     }
 
+    /* ── INSIGHTS ── */
+    .section-insights { background: var(--surface); padding: 96px 56px; }
+
+    .insights-list {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0 32px;
+    }
+
+    .insight-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .insight-row:last-child { border-bottom: none; }
+    .insight-row:hover .insight-title { color: var(--steel); }
+    .insight-row:hover .insight-arrow { transform: translateX(4px); }
+
+    .insight-meta {
+      flex-shrink: 0;
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .insight-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-light);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .insight-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+    .insight-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--steel);
+      background: var(--steel-light);
+      padding: 2px 8px;
+      border-radius: 3px;
+      border: 1px solid #C5DEF0;
+    }
+
+    .insight-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+      transition: color 0.2s;
+    }
+
+    .insight-arrow {
+      display: inline-block;
+      color: var(--accent);
+      transition: transform 0.2s;
+      margin-left: 4px;
+    }
+
     /* ── CONTACT ── */
     .section-contact { background: var(--white); padding: 96px 56px; }
 
@@ -655,7 +724,10 @@
       .section-services,
       .section-expertise,
       .section-faq,
+      .section-insights,
       .section-contact { padding: 64px 24px; }
+      .insight-row { flex-direction: column; gap: 8px; }
+      .insight-meta { width: auto; flex-direction: row; align-items: center; gap: 12px; }
       footer { padding: 48px 24px 28px; }
       .two-col { grid-template-columns: 1fr; gap: 48px; }
       .two-col .about-diagram { order: -1; }
@@ -677,6 +749,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#insights">Insights</a></li>
     <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
   </ul>
 </nav>
@@ -874,6 +947,66 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ══ INSIGHTS ══ -->
+<section class="section-insights" id="insights">
+  <div class="inner">
+    <div class="section-heading">
+      <span class="section-tag">Insights</span>
+      <h2>From the field</h2>
+      <p>Writing on AI engineering, data infrastructure, and the tools we use to build it.</p>
+    </div>
+
+    <div class="insights-list">
+
+      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-11-your-home-is-a-data-center.html" target="_blank" rel="noopener">
+        <div class="insight-meta">
+          <span class="insight-date">Jun 2026</span>
+          <div class="insight-tags"><span class="insight-tag">ai-infrastructure</span><span class="insight-tag">power-grid</span></div>
+        </div>
+        <div class="insight-title">Your Neighbor's Side Yard Might Be Running AI <span class="insight-arrow">→</span></div>
+      </a>
+
+      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-08-From-HTML-to-Live-Deploying-a-Business-Website-with-GitHub-Pages-and-Custom-Domain.html" target="_blank" rel="noopener">
+        <div class="insight-meta">
+          <span class="insight-date">Jun 2026</span>
+          <div class="insight-tags"><span class="insight-tag">github-pages</span><span class="insight-tag">dns</span></div>
+        </div>
+        <div class="insight-title">From HTML to Live: Deploying a Business Website with GitHub Pages and a Custom Domain <span class="insight-arrow">→</span></div>
+      </a>
+
+      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-06-Sherry-and-Claude-Untangle-Three-Separate-Billing-Systems.html" target="_blank" rel="noopener">
+        <div class="insight-meta">
+          <span class="insight-date">Jun 2026</span>
+          <div class="insight-tags"><span class="insight-tag">python</span><span class="insight-tag">billing</span></div>
+        </div>
+        <div class="insight-title">Untangling Three Separate Billing Systems <span class="insight-arrow">→</span></div>
+      </a>
+
+      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-05-Sherry-and-Claude-Added-HTML-Publishing-Pipeline-for-Garden-of-Thoughts.html" target="_blank" rel="noopener">
+        <div class="insight-meta">
+          <span class="insight-date">Jun 2026</span>
+          <div class="insight-tags"><span class="insight-tag">python</span><span class="insight-tag">automation</span></div>
+        </div>
+        <div class="insight-title">Building an HTML Publishing Pipeline for a Markdown Blog <span class="insight-arrow">→</span></div>
+      </a>
+
+      <a class="insight-row" href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-05-11-The-Prompt-Evolved-Into-Infrastructure.html" target="_blank" rel="noopener">
+        <div class="insight-meta">
+          <span class="insight-date">May 2026</span>
+          <div class="insight-tags"><span class="insight-tag">prompt-engineering</span><span class="insight-tag">llm</span></div>
+        </div>
+        <div class="insight-title">The Prompt Evolved Into Infrastructure — A Quiet Shift in AI Engineering <span class="insight-arrow">→</span></div>
+      </a>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="http://sherryanalytics.github.io/Rain/garden-of-thoughts/" target="_blank" rel="noopener" class="btn-outline">View all writing →</a>
+    </div>
+
   </div>
 </section>
 
