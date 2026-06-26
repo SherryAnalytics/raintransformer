@@ -1,5 +1,17 @@
 [
   {
+    "title": "RLM: AI with a Workbench",
+    "url": "https://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-25-RLM-AI-with-a-Workbench.html",
+    "date": "2026-06-25",
+    "dateLabel": "Jun 2026",
+    "tags": [
+      "recursive-language-models",
+      "context-rot",
+      "llm",
+      "coding-environment"
+    ]
+  },
+  {
     "title": "Your AI Assistant Is Almost as Power-Hungry as You Are",
     "url": "https://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-25-Your-AI-Assistant-Is-Almost-as-Power-Hungry-as-You-Are.html",
     "date": "2026-06-25",
@@ -45,18 +57,6 @@
       "claude-api",
       "billing",
       "claude-code"
-    ]
-  },
-  {
-    "title": "Sherry and Claude Added HTML Publishing Pipeline for Garden of Thoughts",
-    "url": "https://sherryanalytics.github.io/Rain/garden-of-thoughts/2026-06-05-Sherry-and-Claude-Added-HTML-Publishing-Pipeline-for-Garden-of-Thoughts.html",
-    "date": "2026-06-05",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "python",
-      "uv",
-      "html",
-      "publishing"
     ]
   }
 ]
