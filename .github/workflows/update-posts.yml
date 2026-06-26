@@ -27,7 +27,7 @@ jobs:
           from html.parser import HTMLParser
           from datetime import datetime
 
-          BASE_URL = "https://sherryanalytics.github.io/Rain/garden-of-thoughts/"
+          BASE_URL = "https://sherryanalytics.github.io/rain/garden-of-thoughts/"
           MAX_POSTS = 5
 
           def fetch(url, timeout=15):
