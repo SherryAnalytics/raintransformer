@@ -1,5 +1,29 @@
 [
   {
+    "title": "Independence Day, for the Independent Developer",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-04-Independence-Day-for-the-Independent-Developer.html",
+    "date": "2026-07-04",
+    "dateLabel": "Jul 2026",
+    "tags": [
+      "independence-day",
+      "independent-projects",
+      "ownership",
+      "independent-developer"
+    ]
+  },
+  {
+    "title": "My AI Assistant Keeps a Notebook",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-04-My-AI-Assistant-Keeps-a-Notebook.html",
+    "date": "2026-07-04",
+    "dateLabel": "Jul 2026",
+    "tags": [
+      "claude-code",
+      "persistent-memory",
+      "fable-5",
+      "agentic-ai"
+    ]
+  },
+  {
     "title": "RLM: AI with a Workbench",
     "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-25-RLM-AI-with-a-Workbench.html",
     "date": "2026-06-25",
@@ -33,30 +57,6 @@
       "edge-computing",
       "power-grid",
       "data-centers"
-    ]
-  },
-  {
-    "title": "From HTML to Live: Deploying a Business Website with GitHub Pages and a Custom Domain",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-08-From-HTML-to-Live-Deploying-a-Business-Website-with-GitHub-Pages-and-Custom-Domain.html",
-    "date": "2026-06-08",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "github-pages",
-      "dns",
-      "git",
-      "web"
-    ]
-  },
-  {
-    "title": "Sherry and Claude Untangle Three Separate Billing Systems",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-06-Sherry-and-Claude-Untangle-Three-Separate-Billing-Systems.html",
-    "date": "2026-06-06",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "python",
-      "claude-api",
-      "billing",
-      "claude-code"
     ]
   }
 ]
