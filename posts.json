@@ -1,5 +1,41 @@
 [
   {
+    "title": "The Cheap Way to Build an AI: Ask Someone Else's Model a Few Million Questions",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-28-AI-Model-Distillation-Explained.html",
+    "date": "2026-07-28",
+    "dateLabel": "Jul 2026",
+    "tags": [
+      "ai",
+      "distillation",
+      "llm",
+      "anthropic"
+    ]
+  },
+  {
+    "title": "The Model Didn't Go Rogue. It Just Really Wanted to Pass the Test.",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-28-The-Model-That-Hacked-Its-Way-to-a-Passing-Grade.html",
+    "date": "2026-07-28",
+    "dateLabel": "Jul 2026",
+    "tags": [
+      "ai",
+      "ai-safety",
+      "exploitgym",
+      "openai"
+    ]
+  },
+  {
+    "title": "Your GPU Bill Isn't Paying for a Search — It's Paying for a Bartender",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-28-Training-Is-Not-a-Search-Through-Every-Combination.html",
+    "date": "2026-07-28",
+    "dateLabel": "Jul 2026",
+    "tags": [
+      "ai",
+      "deep-learning",
+      "gradient-descent",
+      "backpropagation"
+    ]
+  },
+  {
     "title": "Independence Day, for the Independent Developer",
     "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-04-Independence-Day-for-the-Independent-Developer.html",
     "date": "2026-07-04",
@@ -21,42 +57,6 @@
       "persistent-memory",
       "fable-5",
       "agentic-ai"
-    ]
-  },
-  {
-    "title": "RLM: AI with a Workbench",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-25-RLM-AI-with-a-Workbench.html",
-    "date": "2026-06-25",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "recursive-language-models",
-      "context-rot",
-      "llm",
-      "coding-environment"
-    ]
-  },
-  {
-    "title": "Your AI Assistant Is Almost as Power-Hungry as You Are",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-25-Your-AI-Assistant-Is-Almost-as-Power-Hungry-as-You-Are.html",
-    "date": "2026-06-25",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "ai-infrastructure",
-      "energy",
-      "inference",
-      "chips"
-    ]
-  },
-  {
-    "title": "Your Neighbor's Side Yard Might Be Running AI",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-06-11-your-home-is-a-data-center.html",
-    "date": "2026-06-11",
-    "dateLabel": "Jun 2026",
-    "tags": [
-      "ai-infrastructure",
-      "edge-computing",
-      "power-grid",
-      "data-centers"
     ]
   }
 ]
