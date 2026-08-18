@@ -1,5 +1,17 @@
 [
   {
+    "title": "The Caterpillar and the Butterfly: What Hinton's 2015 Distillation Paper Actually Argued",
+    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-08-17-The-Caterpillar-and-the-Model.html",
+    "date": "2026-08-17",
+    "dateLabel": "Aug 2026",
+    "tags": [
+      "ai",
+      "distillation",
+      "llm",
+      "hinton"
+    ]
+  },
+  {
     "title": "The Cheap Way to Build an AI: Ask Someone Else's Model a Few Million Questions",
     "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-28-AI-Model-Distillation-Explained.html",
     "date": "2026-07-28",
@@ -45,18 +57,6 @@
       "independent-projects",
       "ownership",
       "independent-developer"
-    ]
-  },
-  {
-    "title": "My AI Assistant Keeps a Notebook",
-    "url": "https://sherryanalytics.github.io/rain/garden-of-thoughts/2026-07-04-My-AI-Assistant-Keeps-a-Notebook.html",
-    "date": "2026-07-04",
-    "dateLabel": "Jul 2026",
-    "tags": [
-      "claude-code",
-      "persistent-memory",
-      "fable-5",
-      "agentic-ai"
     ]
   }
 ]
